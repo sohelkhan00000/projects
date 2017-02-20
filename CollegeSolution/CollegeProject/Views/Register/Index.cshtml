@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td>@Html.TextBox("txtFirstName")</td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>@Html.TextBox("txtLastName")</td>
+            </tr>
+            <tr>
+                <td>Email Id</td>
+                <td>
+                    @Html.TextBox("txtEmail", "", new { @myatr = "hellobabay", @type = "email" })
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
