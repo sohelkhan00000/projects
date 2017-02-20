@@ -1,10 +1,11 @@
-﻿using CollegeProject.Infrastructure;
+﻿using System.Web;
+using System.Web.Mvc;
 
-namespace CollegeProject.App_Start
+namespace CollegeProject
 {
     public class FilterConfig
     {
-        public static void Configure(System.Web.Mvc.GlobalFilterCollection filters)
+        public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
         }

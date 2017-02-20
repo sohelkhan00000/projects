@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+       <table>
+           <tr>
+               <td>@Html.Label("User Name")</td>
+               <td>@Html.TextBox("txtUserName")</td>
+           </tr>
+           <tr>
+               <td>@Html.Label("Password")</td>
+               <td>@Html.TextBox("txtPassword" , new { @type="Email" })</td>
+           </tr>
+       </table>
+    </div>
+</body>
+</html>
