@@ -30,5 +30,8 @@ namespace CollegeProject.Controllers
         {
             // created by ffw error
         }
+
+        public void test5() {
+        }
     }
 }
