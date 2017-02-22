@@ -33,5 +33,8 @@ namespace CollegeProject.Controllers
 
         public void test5() {
         }
+
+        public void test6() {
+        }
     }
 }
