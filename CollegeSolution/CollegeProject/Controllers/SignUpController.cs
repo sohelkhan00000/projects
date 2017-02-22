@@ -22,5 +22,7 @@ namespace CollegeProject.Controllers
         {
 
         }
+        public void test3() {
+        }
     }
 }
