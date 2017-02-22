@@ -13,5 +13,9 @@ namespace CollegeProject.Controllers
         {
             return View();
         }
+
+        public void test() {
+
+        }
     }
 }
