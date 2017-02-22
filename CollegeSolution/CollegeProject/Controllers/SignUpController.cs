@@ -22,7 +22,13 @@ namespace CollegeProject.Controllers
         {
 
         }
-        public void test3() {
+        public void test3()
+        {
+        }
+
+        public void HEllo()
+        {
+            // created by ffw error
         }
     }
 }
