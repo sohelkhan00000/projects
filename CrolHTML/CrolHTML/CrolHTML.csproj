@@ -39,6 +39,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="assets\images\new-nav.png" />
+    <Content Include="assets\images\PB-Member_0034.png" />
     <Content Include="assets\plugin\jquery\jquery.js" />
     <Content Include="assets\plugin\owl-carousel\AjaxLoader.gif" />
     <Content Include="assets\plugin\owl-carousel\grabbing.png" />
@@ -46,6 +48,13 @@
     <Content Include="assets\plugin\owl-carousel\owl.carousel.min.js" />
     <Content Include="assets\plugin\owl-carousel\owl.theme.css" />
     <Content Include="assets\plugin\owl-carousel\owl.transitions.css" />
+    <Content Include="assets\plugin\tooltip\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="assets\plugin\tooltip\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="assets\plugin\tooltip\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="assets\plugin\tooltip\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="assets\plugin\tooltip\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="assets\plugin\tooltip\css\tooltipster.bundle.min.css" />
+    <Content Include="assets\plugin\tooltip\js\tooltipster.bundle.min.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>

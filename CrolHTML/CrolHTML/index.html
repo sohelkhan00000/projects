@@ -4,6 +4,8 @@
     <title></title>
     <meta charset="utf-8" />
     <link href="assets/plugin/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link href="assets/plugin/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
         .owl-carousel-wrapper {
             width: 1080px;
@@ -11,38 +13,129 @@
         }
 
         #owl-demo .item {
-            background: #3fbf79;
-            padding:0px;
+            /*background: #3fbf79;*/
+            padding: 0px;
             margin: 10px;
-           
-            min-height:175px;
+            min-height: 175px;
             color: #FFF;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;
             text-align: center;
         }
-        .owl-carousel-wrapper .image-1,  .owl-carousel-wrapper .image-2 {
-            width:100%;
-            height:88px;
-            background-color:grey;
+
+        .owl-carousel-wrapper .image-1, .owl-carousel-wrapper .image-2 {
+            width: 100%;
+            height: 88px;
+            /*background-color:grey;*/
         }
+
+
         .owl-carousel-wrapper .image-2 {
-            margin-top:10px;
+            margin-top: 10px;
         }
+
         .customNavigation {
             text-align: center;
         }
 
-            /*use styles below to disable ugly selection*/
-            .customNavigation a {
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        .owl-carousel-wrapper #owl-demo .item img {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+
+            .owl-carousel-wrapper #owl-demo .item img:hover {
+                filter: none;
+                -webkit-filter: grayscale(0%);
             }
+
+        .owl-theme .owl-controls .owl-page {
+            display: inline-block;
+        }
+
+            .owl-theme .owl-controls .owl-page span {
+                background: none repeat scroll 0 0 #869791;
+                border-radius: 20px;
+                display: block;
+                height: 12px;
+                margin: 5px 7px;
+                opacity: 0.5;
+                width: 12px;
+            }
+
+        .owl-carousel-wrapper .owl-pagination {
+            text-align: center;
+        }
+
+        .owl-buttons {
+            position: absolute;
+            width: 100%;
+            top: 33%;
+        }
+
+
+
+        .owl-controls .owl-buttons .owl-prev {
+            left: -20px;
+            top: 45%;
+            background-position: 0 0;
+        }
+
+        .owl-controls .owl-buttons .owl-next {
+            right: -20px;
+            top: 45%;
+            background-position: -16px 0px !important;
+        }
+
+        .owl-controls .owl-buttons .owl-prev, .owl-controls .owl-buttons .owl-next {
+            background: url('assets/images/new-nav.png') 0 0 no-repeat;
+            width: 15px;
+            height: 24px;
+            text-indent: -500em;
+            position: absolute;
+        }
+
+            .owl-controls .owl-buttons .owl-prev:hover {
+                background-position: 0 -27px;
+                left: -20px;
+                top: 45%;
+            }
+
+            .owl-controls .owl-buttons .owl-next:hover {
+                background-position: -16px -27px !important;
+                right: -20px;
+                top: 45%;
+            }
+        /*use styles below to disable ugly selection*/
+        .customNavigation a {
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        .tooltipster-arrow {
+            display: none;
+        }
+
+        .tooltipster-sidetip.tooltipster-bottom .tooltipster-box {
+            border: 0px;
+            border-radius: 0px;
+            margin-top: 4px;
+        }
+
+        .tooltip_templates {
+            display: none;
+        }
+
+        .ui-tooltip {
+            max-width: initial;
+        }
+
+        .ui-tooltip-custom {
+        }
     </style>
 </head>
 <body>
@@ -50,50 +143,180 @@
         <div id="owl-demo" class="owl-carousel owl-theme">
             <div class="item">
                 <div class="image-1">
-
+                    <img class="tooltip-link" title="this is dummy text" src="assets/images/PB-Member_0034.png" />
                 </div>
                 <div class="image-2">
-                   
+                    <img src="assets/images/PB-Member_0034.png" />
                 </div>
             </div>
-            <div class="item"><h1>2</h1></div>
-            <div class="item"><h1>3</h1></div>
-            <div class="item"><h1>4</h1></div>
-            <div class="item"><h1>5</h1></div>
-            <div class="item"><h1>6</h1></div>
-            <div class="item"><h1>7</h1></div>
-            <div class="item"><h1>8</h1></div>
-            <div class="item"><h1>9</h1></div>
-            <div class="item"><h1>10</h1></div>
-            <div class="item"><h1>11</h1></div>
-            <div class="item"><h1>12</h1></div>
-            <div class="item"><h1>13</h1></div>
-            <div class="item"><h1>14</h1></div>
-            <div class="item"><h1>15</h1></div>
-            <div class="item"><h1>16</h1></div>
-        </div>
-    </div>
- 
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
+            <div class="item">
+                <div class="image-1">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+                <div class="image-2">
+                    <img src="assets/images/PB-Member_0034.png" />
+                </div>
+            </div>
 
-  
+        </div>
+
+
+    </div>
+
+
+
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/plugin/tooltip/js/tooltipster.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
 
             var owl = $("#owl-demo");
 
             owl.owlCarousel({
-                items: 10, //10 items above 1000px browser width
+                items: 10, //there is should be 10 value
                 itemsDesktop: [1000, 5], //5 items between 1000px and 901px
                 itemsDesktopSmall: [900, 3], // betweem 900px and 601px
                 itemsTablet: [600, 2], //2 items between 600 and 0
-                itemsMobile: false ,// itemsMobile disabled - inherit from itemsTablet option
+                itemsMobile: false,// itemsMobile disabled - inherit from itemsTablet option
+                dots: true,
+                navigation: true,
+                //navigationText: [
+                //   "<i class='fa fa-chevron-left'></i>",
+                //   "<i class='fa fa-chevron-right'></i>"
+                //],
                 //autoPlay: 1000,
-                //stopOnHover:true
-                //autoPlayTimeout: 500,
-              
+                //stopOnHover: true
+
             });
+
+
+            $('.tooltip-link').tooltipster({
+                interactive: true,
+                position: 'bottom',
+                trigger: 'click',
+                functionPosition: function (instance, helper, position) {
+                    if (position.side == "bottom") {
+
+                        position.coord.top += (-10);
+                        return position;
+
+                    }
+                }
+            });
+
         });
     </script>
 </body>
