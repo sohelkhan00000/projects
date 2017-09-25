@@ -43,29 +43,66 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="assets\images\" />
-    <Folder Include="assets\js\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\css\base.css" />
-    <Content Include="assets\css\style.css" />
-    <Content Include="assets\plugin\bootstrap-4.0.0-beta-dist\css\bootstrap-grid.min.css" />
-    <Content Include="assets\plugin\bootstrap-4.0.0-beta-dist\css\bootstrap-reboot.min.css" />
-    <Content Include="assets\plugin\bootstrap-4.0.0-beta-dist\css\bootstrap.min.css" />
-    <Content Include="assets\plugin\bootstrap-4.0.0-beta-dist\js\bootstrap.min.js" />
-    <Content Include="assets\plugin\Font-Awesome-master\css\font-awesome.min.css" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\fontawesome-webfont.svg" />
     <Content Include="index.html" />
+    <Content Include="largcoin\web\css\animate.min.css" />
+    <Content Include="largcoin\web\css\bootstrap.css" />
+    <Content Include="largcoin\web\css\jquery-ui.css" />
+    <Content Include="largcoin\web\css\style.css" />
+    <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="largcoin\web\images\1-.png" />
+    <Content Include="largcoin\web\images\1.jpg" />
+    <Content Include="largcoin\web\images\1.png" />
+    <Content Include="largcoin\web\images\10.jpg" />
+    <Content Include="largcoin\web\images\11.jpg" />
+    <Content Include="largcoin\web\images\12.jpg" />
+    <Content Include="largcoin\web\images\13.jpg" />
+    <Content Include="largcoin\web\images\14.jpg" />
+    <Content Include="largcoin\web\images\15.jpg" />
+    <Content Include="largcoin\web\images\16.jpg" />
+    <Content Include="largcoin\web\images\17.jpg" />
+    <Content Include="largcoin\web\images\18.jpg" />
+    <Content Include="largcoin\web\images\19.jpg" />
+    <Content Include="largcoin\web\images\2.jpg" />
+    <Content Include="largcoin\web\images\2.png" />
+    <Content Include="largcoin\web\images\3.jpg" />
+    <Content Include="largcoin\web\images\3.png" />
+    <Content Include="largcoin\web\images\4.jpg" />
+    <Content Include="largcoin\web\images\4.png" />
+    <Content Include="largcoin\web\images\5.jpg" />
+    <Content Include="largcoin\web\images\6.jpg" />
+    <Content Include="largcoin\web\images\7.jpg" />
+    <Content Include="largcoin\web\images\8.jpg" />
+    <Content Include="largcoin\web\images\9.jpg" />
+    <Content Include="largcoin\web\images\banner.jpg" />
+    <Content Include="largcoin\web\images\banner1.jpg" />
+    <Content Include="largcoin\web\images\banner2.jpg" />
+    <Content Include="largcoin\web\images\banner3.jpg" />
+    <Content Include="largcoin\web\images\banner4.jpg" />
+    <Content Include="largcoin\web\images\banner5.jpg" />
+    <Content Include="largcoin\web\images\img-sp.png" />
+    <Content Include="largcoin\web\images\img_avatar1.png" />
+    <Content Include="largcoin\web\index.html" />
+    <Content Include="largcoin\web\js\bootstrap.js" />
+    <Content Include="largcoin\web\js\jquery-1.11.1.min.js" />
+    <Content Include="largcoin\web\js\jquery-ui.js" />
+    <Content Include="largcoin\web\js\menu_jquery.js" />
+    <Content Include="largcoin\web\js\wow.min.js" />
+    <Content Include="largcoin\web\plugin\marquee\jquery.marquee.min.js" />
+    <Content Include="largcoin\web\plugin\owl-carousel\AjaxLoader.gif" />
+    <Content Include="largcoin\web\plugin\owl-carousel\grabbing.png" />
+    <Content Include="largcoin\web\plugin\owl-carousel\owl.carousel.css" />
+    <Content Include="largcoin\web\plugin\owl-carousel\owl.carousel.min.js" />
+    <Content Include="largcoin\web\plugin\owl-carousel\owl.theme.css" />
+    <Content Include="largcoin\web\plugin\owl-carousel\owl.transitions.css" />
     <Content Include="packages.config" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\fontawesome-webfont.eot" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\fontawesome-webfont.ttf" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\fontawesome-webfont.woff" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\fontawesome-webfont.woff2" />
-    <Content Include="assets\plugin\Font-Awesome-master\fonts\FontAwesome.otf" />
-    <None Include="assets\plugin\jquery\jquery-3.2.1.intellisense.js" />
-    <Content Include="assets\plugin\jquery\jquery-3.2.1.min.js" />
-    <Content Include="assets\plugin\jquery\jquery-3.2.1.slim.min.js" />
+    <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="largcoin\web\images\Thumbs.db" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

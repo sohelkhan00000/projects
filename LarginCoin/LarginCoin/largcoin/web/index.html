@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Sea King Restaurant a Hotels And Restaurant Category Flat Bootstrap Responsive Website Template | Home</title>
+    <title>bitcoin a Hotels And Restaurant Category Flat Bootstrap Responsive Website Template | Home</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Sea King Restaurant Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+    <meta name="keywords" content="bitcoin Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
     <script type="application/x-javascript">
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
@@ -24,6 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link href="css/animate.min.css" rel="stylesheet">
     <script src="js/wow.min.js"></script>
     <script src="plugin/owl-carousel/owl.carousel.min.js"></script>
+    <script src="plugin/marquee/jquery.marquee.min.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -196,32 +197,88 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!-- //banner-bottom -->
     <style>
-        .about-bitcoin ul li {
-            padding: 10px 0px;
+        .about-bitcoin {
+            padding-bottom: 50px;
+            padding-top: 50px;
+            background-color: #eef1f3;
+        }
+
+            .about-bitcoin ul li {
+                padding: 10px 10px;
+                margin-top: 10px;
+                text-align: left;
+                background-color: #42517B;
+                color: #fff;
+            }
+
+        ol {
+            counter-reset: li; /* Initiate a counter */
+            list-style: none; /* Remove default numbering */
+            *list-style: decimal; /* Keep using default numbering for IE6/7 */
+            font: 15px 'trebuchet MS', 'lucida sans';
+            padding: 0;
+            margin-bottom: 4em;
+            text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        }
+
+
+
+        .rounded-list a {
+            position: relative;
+            display: block;
+            padding: 1em 3em 3em 4em;
+            margin: 3.5em 0;
+            background: #ddd;
+            color: #444;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: all .3s ease-out;
+            height: 130px;
+            font-size: 1.3em;
             text-align: left;
         }
+
+            .rounded-list a:hover {
+                background: #eee;
+            }
+
+            /*.rounded-list a:hover:before {
+                    transform: rotate(360deg);
+                }*/
+
+            .rounded-list a:before {
+                content: counter(li);
+                counter-increment: li;
+                position: absolute;
+                left: -4.3em;
+                top: 16%;
+                margin-top: -1.3em;
+                background: #87ceeb;
+                height: 7em;
+                width: 7em;
+                line-height: 6.2em;
+                border: .3em solid #fff;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 4em;
+                transition: all .3s ease-out;
+            }
     </style>
     <div class="about-bitcoin">
         <div class="container">
             <div class="">
                 <div class="col-xs-12" style="text-align:center; padding-bottom:60px;">
-                    <h2 style="color:#F07818;">What is a bitcoin4u ? </h2>
+                    <h1 style="color:#F07818; font-size:3em;">What is a bitcoin4u ? </h1>
                 </div>
                 <div class="col-xs-12 banner-bottom-grid animated wow slideInLeft" data-wow-delay=".5s">
-                    <ul>
-                        <li>
-                            Bitcoin4u.biz is an advertising website. We work on bringing high traffic to your website or/and affiliate program, we also offer an opportunity for you to make money with us through our earning plans.
-                        </li>
-                        <li>
-                            Bitcoin is a form of digital currency, created and held electronically. No one controls it. Bitcoins aren't printed, like dollars or euros – they're produced by people, and increasingly businesses, running computers all around the world, using software that solves mathematical problems.
-                        </li>
-                        <li>
-                            Bitcoin uses peer-to-peer technology to operate with no central authority or banks;managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.
-                        </li>
-                    </ul>
 
-
-
+                    <ol class="rounded-list">
+                        <li><a href="">Bitcoin4u.biz is an advertising website. We work on bringing high traffic to your website or/and affiliate program, we also offer an opportunity for you to make money with us through our earning plans.</a></li>
+                        <li><a href=""> Bitcoin is a form of digital currency, created and held electronically. No one controls it. Bitcoins aren't printed, like dollars or euros – they're produced by people, and increasingly businesses, running computers all around the world, using software that solves mathematical problems.</a></li>
+                        <li>
+                            <a href=""> Bitcoin uses peer-to-peer technology to operate with no central authority or banks;managing transactions and the issuing of bitcoins is carried out collectively by the network. Bitcoin is open-source; its design is public, nobody owns or controls Bitcoin and everyone can take part. Through many of its unique properties, Bitcoin allows exciting uses that could not be covered by any previous payment system.</a>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="clearfix"> </div>
@@ -230,10 +287,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 
     <!-- newsletter -->
-    <div class="newsletter-top">
-
-
-
+    <div class="newsletter-top container">
         <div class="col-xs-12 text-center newsletter-top-grid animated wow slideInRight" data-wow-delay=".6s">
             <div class="newsletter">
                 <h3>Get Our Newsletter</h3>
@@ -249,11 +303,49 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!-- last-joining -->
     <style>
         .last-joining {
+            padding-bottom: 50px;
+            padding-top: 50px;
+            background-color: #eef1f3;
         }
+
+            .last-joining .recent-transaction a {
+                border: 1px solid #F07818;
+                color: #F07818;
+                padding: 5px 15px;
+            }
+
+            .last-joining h2 {
+                color: #F07818;
+            }
+
+            .last-joining .banner-bottom-grids > .col-md-4 {
+                overflow: hidden;
+                padding-top: 10px;
+            }
+
+                .last-joining .banner-bottom-grids > .col-md-4 > .inner {
+                    height: 250px;
+                    width: 100%;
+                    border: 4px solid #ff6a00;
+                    border-radius: 4px;
+                    padding: 10px;
+                    overflow: hidden;
+                }
+
+                .last-joining .banner-bottom-grids > .col-md-4:nth-child(2) > .inner {
+                    padding-top: 50px;
+                }
+
+                    .last-joining .banner-bottom-grids > .col-md-4:nth-child(2) > .inner .btn {
+                        padding: 20px 12px;
+                    }
+        /*.last-joining .banner-bottom-grids > .col-md-4:last-child {
+                    margin-right: 0;
+                }*/
     </style>
     <div class="last-joining">
         <div class="container">
-            <div class="banner-bottom-grids">
+            <div class="row">
                 <div class="col-md-4">
                     <h2>Latest joining</h2>
                 </div>
@@ -263,53 +355,109 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="col-md-4">
                     <h2>Recent Transactions</h2>
                 </div>
-                <div class="col-md-4  animated wow slideInLeft" data-wow-delay=".5s">
-                   <br />
-                    <p>This is not a MLM or Money chain program. This system is 100% legal and 1000% successful. It is not a Scam or Fraud way of making Money.</p>
+            </div>
+            <br />
+            <div class="banner-bottom-grids row" style="">
+                <div class="col-md-4  animated wow slideInLeft " data-wow-delay=".5s">
+                    <div class="inner marquee" style="">
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">link</a></div>
+                            <div class="col-xs-4">United States</div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">link</a></div>
+                            <div class="col-xs-4">United States</div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">link</a></div>
+                            <div class="col-xs-4">United States</div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-4 animated wow slideInLeft" data-wow-delay=".7s">
-                    <br />
-                    <p>This is very unique and New Concept Which is amazing. System Direct Payment to you by the member you refer.</p>
+                    <div class="inner">
+                        <button type="button" class="btn btn-primary btn-block">Log in</button>
+                        <button type="button" class="btn btn-success btn-block">Sign Up</button>
+                    </div>
                 </div>
-                <div class="col-md-4 animated wow slideInLeft" data-wow-delay=".7s">
-                   <br />
-                    <p>This system have three types of plan: Plan-A (Working Plan) and Plan-B / Plan-C (Non Working Plan). Start with working plan, shifted to non working plan automatically.</p>
+                <div class="col-md-4 animated wow slideInLeft  recent-transaction " data-wow-delay=".7s">
+                    <div class="inner marquee">
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-8">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">BTF 00.20</a></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-8">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">BTF 00.20</a></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-8">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">BTF 00.20</a></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-8">Maximiliano Peixoto</div>
+                            <div class="col-xs-4"><a href="#">BTF 00.20</a></div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="clearfix"> </div>
             </div>
         </div>
     </div>
     <!-- //banner-bottom -->
-
     <!-- user-view -->
     <style>
-     .user-view .owl-pagination {
-          text-align:center;
-        }
-        .owl-carousel-wrapper {
-            background-color:aquamarine;
-            padding-top:15px;
-            padding-bottom:10px;
-        }
-        .user-view .owl-carousel-wrapper .item {
-            padding-left:15px;
-            padding-right:15px;
-        }
-          .user-view .owl-theme .owl-controls .owl-page {
-            display: inline-block;
+        .user-view {
+            padding-top: 100px;
+            padding-bottom: 50px;
+            text-align: left;
         }
 
-           .user-view .owl-theme .owl-controls .owl-page span {
-                background: none repeat scroll 0 0 #869791;
-                border-radius: 20px;
-                display: block;
-                height: 12px;
-                margin: 5px 7px;
-                opacity: 0.5;
-                width: 12px;
+            .user-view .owl-pagination {
+                text-align: center;
+            }
+
+            /*.owl-carousel-wrapper {
+            background-color: aquamarine;
+
+        }*/
+
+            .user-view .owl-carousel-wrapper .item {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .user-view .owl-theme .owl-controls .owl-page {
+                display: inline-block;
+            }
+
+                .user-view .owl-theme .owl-controls .owl-page span {
+                    background: none repeat scroll 0 0 #869791;
+                    border-radius: 20px;
+                    display: block;
+                    height: 12px;
+                    margin: 5px 7px;
+                    opacity: 0.5;
+                    width: 12px;
+                }
+
+            .user-view .owl-carousel .owl-wrapper-outer {
+                padding-bottom: 50px;
             }
     </style>
-    <br />
+
     <div class="user-view">
         <div class="container">
             <div class="banner-bottom-grids">
@@ -324,11 +472,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     </div>
                                     <div class="media-body">
                                         <h4 class="media-heading">John Doe</h4>
-                                        <p>                                            found this website while searching on google and very much interested on it.
+                                        <p>
+                                            found this website while searching on google and very much interested on it.
                                             I have joined as a member by paying 0.02 BTC. Within a week, I earned 1.50 BTC
                                             and my earnings are increasing daily. Now I am concentrating to achieve 200000 BTC.
                                             It amazing opportunity for ordinary peoples like me
-</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -432,7 +581,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                     </div>
                 </div>
-              
+
                 <div class="clearfix"> </div>
             </div>
         </div>
