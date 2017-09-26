@@ -53,32 +53,15 @@
     <Content Include="largcoin\web\css\style.css" />
     <Content Include="largcoin\web\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="largcoin\web\images\1-.png" />
-    <Content Include="largcoin\web\images\1.jpg" />
     <Content Include="largcoin\web\images\1.png" />
-    <Content Include="largcoin\web\images\10.jpg" />
-    <Content Include="largcoin\web\images\11.jpg" />
-    <Content Include="largcoin\web\images\12.jpg" />
-    <Content Include="largcoin\web\images\13.jpg" />
-    <Content Include="largcoin\web\images\14.jpg" />
     <Content Include="largcoin\web\images\15.jpg" />
     <Content Include="largcoin\web\images\16.jpg" />
     <Content Include="largcoin\web\images\17.jpg" />
     <Content Include="largcoin\web\images\18.jpg" />
     <Content Include="largcoin\web\images\19.jpg" />
-    <Content Include="largcoin\web\images\2.jpg" />
     <Content Include="largcoin\web\images\2.png" />
-    <Content Include="largcoin\web\images\3.jpg" />
     <Content Include="largcoin\web\images\3.png" />
-    <Content Include="largcoin\web\images\4.jpg" />
     <Content Include="largcoin\web\images\4.png" />
-    <Content Include="largcoin\web\images\5.jpg" />
-    <Content Include="largcoin\web\images\6.jpg" />
-    <Content Include="largcoin\web\images\7.jpg" />
-    <Content Include="largcoin\web\images\8.jpg" />
-    <Content Include="largcoin\web\images\9.jpg" />
-    <Content Include="largcoin\web\images\banner.jpg" />
-    <Content Include="largcoin\web\images\banner1.jpg" />
-    <Content Include="largcoin\web\images\banner2.jpg" />
     <Content Include="largcoin\web\images\banner3.jpg" />
     <Content Include="largcoin\web\images\banner4.jpg" />
     <Content Include="largcoin\web\images\banner5.jpg" />
@@ -90,6 +73,7 @@
     <Content Include="largcoin\web\js\jquery-ui.js" />
     <Content Include="largcoin\web\js\menu_jquery.js" />
     <Content Include="largcoin\web\js\wow.min.js" />
+    <Content Include="largcoin\web\login.html" />
     <Content Include="largcoin\web\plugin\marquee\jquery.marquee.min.js" />
     <Content Include="largcoin\web\plugin\owl-carousel\AjaxLoader.gif" />
     <Content Include="largcoin\web\plugin\owl-carousel\grabbing.png" />
@@ -125,7 +109,6 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
- 
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

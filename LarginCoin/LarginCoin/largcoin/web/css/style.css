@@ -139,7 +139,7 @@ fieldset#body {
 }
 /* Default Input */
 #loginForm input {
-    width: 92%;
+    width: 100%;
     border: 1px solid #DADADA;
     color: #222;
     background: #FFF;
@@ -507,7 +507,7 @@ select {
 /*-- //banner --*/
 /*-- banner-bottom --*/
 .banner-bottom, .newsletter-top, .typo, .contact, .blog, .single, .history, .events, .about {
-    padding: 5em 0;
+    padding: 10em 0;
 }
 
 .banner-bottom-grid h3 {
