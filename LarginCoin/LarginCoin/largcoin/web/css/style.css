@@ -2,7 +2,7 @@
 html, body {
     font-size: 100%;
     background: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 p {
@@ -26,6 +26,8 @@ body a:hover {
 /*-- header-top --*/
 .header-top {
     background: #1A1A1A;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .header-top-left {
@@ -34,22 +36,22 @@ body a:hover {
 
 .header-top-right {
     float: right;
-    margin: 1.3em 0 0;
+    margin: 0px;
 }
 
 .header-top-left p {
     font-size: 14px;
     color: #999;
-    margin: 2em 0 0;
+    margin: 0px;
 }
 
 .header-top-right a {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #fff;
     text-decoration: none;
     font-weight: 300;
     letter-spacing: 1px;
-    display: block;
+    display: inline-block;
 }
 /*--Login --*/
 #loginContainer {
@@ -258,7 +260,7 @@ input:focus {
     color: #F07818;
     font-weight: 300;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 30px 25px;
 }
 
@@ -286,7 +288,7 @@ input:focus {
 /*-- //header-nav --*/
 /*-- banner --*/
 .banner1 {
-    background: url(../images/banner5.jpg) no-repeat 0px 0px;
+    background: url(../images/banner10.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -305,17 +307,33 @@ input:focus {
     min-height: 400px;
 }
 
-.banner-info h2 {
+.banner-info h1 {
     text-transform: capitalize;
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
     color: #FFFFFF;
     font-weight: 300;
 }
 
-    .banner-info h2 span {
-        color: #F07818;
-    }
+.banner-info h2 {
+    text-transform: capitalize;
+    font-size: 2em;
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-top:10px;
+}
+.banner-info h3 {
+    text-transform: capitalize;
+    font-size: 2.5em;
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-top:100px;
+}
+.banner-info h1 span {
+    color: #F07818;
+}
 
 .banner-info {
     margin: 6em 0 0;
@@ -506,22 +524,26 @@ select {
 }
 /*-- //banner --*/
 /*-- banner-bottom --*/
-.banner-bottom, .newsletter-top, .typo, .contact, .blog, .single, .history, .events, .about {
-    padding: 10em 0;
+/*.banner-bottom {
+    background-image:url('../images/background1.jpg');
+}*/
+.banner-bottom, .video-bar, .typo, .contact, .blog, .single, .history, .events, .about {
+    padding: 8em 0;
 }
 
 .banner-bottom-grid h3 {
     text-transform: capitalize;
     font-size: 1.5em;
     margin: 0;
-    color: #000;
+    color: #F07818;
     font-weight: 300;
     letter-spacing: 1px;
+    font-size:2em;
 }
 
 .banner-bottom-grid p {
     color: #000;
-    font-size: 14px;
+    font-size: 19px;
     margin: 1em 0 0;
     letter-spacing: 2px;
     line-height: 1.8em;
@@ -615,6 +637,7 @@ figure.thumb img {
 
 .newsletter {
     text-align: center;
+    margin-bottom: 50px;
 }
 
     .newsletter h3 {
@@ -727,6 +750,21 @@ figure.thumb img {
     background: #3B3B3B;
 }
 
+    .footer .partner {
+        width: 100%;
+        height: auto;
+        clear: both;
+    }
+
+        .footer .partner img {
+            margin-right: 90px;
+        }
+
+            .footer .partner img:last-child {
+                margin-right: 0px;
+            }
+
+
 .footer-grid h3 {
     font-size: 1.5em;
     color: #E5E4E4;
@@ -821,12 +859,17 @@ figure.thumb img {
         font-weight: 300;
         letter-spacing: 1px;
         font-family: 'Oswald', sans-serif;
+        padding-bottom: 10px;
     }
 
         .footer-left p a {
-            color: #fff;
-            text-decoration: underline;
+            color: #8F8D8D;
         }
+
+            .footer-left p a:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
 
 .footer-right ul li {
     display: inline-block;
@@ -1942,7 +1985,7 @@ p.aut, .history-right p {
         padding: 10px 0 10px 32px;
     }
 
-    .banner-bottom, .newsletter-top, .typo, .contact, .blog, .single, .history, .events, .about {
+    .banner-bottom, .video-bar, .typo, .contact, .blog, .single, .history, .events, .about {
         padding: 4em 0;
     }
 
@@ -2047,7 +2090,7 @@ p.aut, .history-right p {
         margin: -0.5em 0 0;
     }
 
-    .banner-bottom, .newsletter-top, .typo, .contact, .blog, .single, .history, .events, .about {
+    .banner-bottom, .video-bar, .typo, .contact, .blog, .single, .history, .events, .about {
         padding: 3em 0;
     }
 
@@ -2568,7 +2611,7 @@ p.aut, .history-right p {
         width: 100%;
     }
 
-    .banner-bottom, .newsletter-top, .typo, .contact, .blog, .single, .history, .events, .about {
+    .banner-bottom, .video-bar, .typo, .contact, .blog, .single, .history, .events, .about {
         padding: 2em 0;
     }
 
