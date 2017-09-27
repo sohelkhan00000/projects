@@ -246,7 +246,7 @@ input:focus {
 
 .navbar-nav {
     float: left;
-    margin: 0 0 0 6em;
+    margin: 0 0 0 18.2em;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
